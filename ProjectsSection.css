@@ -1,0 +1,106 @@
+.projects-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 56px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .filters {
+    margin-bottom: 30px;
+  }
+  
+  .filters button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filters button:hover {
+    background-color: #0056b3;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 400px;   /* Increased width */
+    text-align: left;
+    transition: transform 0.3s ease;
+    border: 2px solid #007bff; /* Added border */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    border-color: #0056b3; /* Change border color on hover */
+  }
+  
+  .project-image {
+    width: 100%;               /* Ensures the image takes up the full width of its container */
+    height: 250px;            /* Increased height for a larger image */
+    border-radius: 10px;      /* Rounds the corners of the image */
+    object-fit: cover;        /* Ensures the image covers the container without distortion */
+  }
+  
+  .project-title {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #333;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .project-status {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .project-status.ongoing {
+    color: #28a745;
+  }
+  
+  .project-status.completed {
+    color: #dc3545;
+  }
+  
+  .project-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .project-button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,86 @@
+nav {
+  background-color: rgba(8, 0, 58, 1); /* Dark background color */
+  padding: 0.5rem 2rem; /* Padding around the nav */
+  color: white; /* Default text color */
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space between logo, links, and buttons */
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold; /* Make logo text bold */
+  margin-right: 2rem; /* Space between logo and links */
+}
+
+.nav-links {
+  flex: 1; /* Allow this section to grow */
+  display: flex;
+  justify-content: center; /* Center the nav links */
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: center; /* Center the nav links */
+  list-style: none;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links ul li {
+  margin: 0 2rem; /* Increased spacing between the list items */
+  font-weight: medium;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.nav-links ul li:hover {
+  color: #00955c; /* Change color on hover */
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center; /* Align buttons vertically */
+}
+
+.btn {
+  background-color: #28ffac; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-left: 1rem; /* Space between buttons */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #1eb89a; /* Darken button on hover */
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-links ul {
+    flex-direction: column; /* Stack the links vertically */
+    width: 100%; /* Full width on mobile */
+  }
+
+  .nav-links ul li {
+    margin: 0.5rem 0; /* Space between items in mobile view */
+  }
+
+  .nav-buttons {
+    margin-top: 1rem; /* Space above buttons in mobile view */
+    justify-content: flex-end; /* Align buttons to the right */
+    width: 100%; /* Full width for buttons */
+  }
+}
